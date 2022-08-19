@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CuartaComponent } from './pages/cuarta/cuarta.component';
+import { AppComponent } from './pages/principal/app.component';
 import { QuintaComponent } from './pages/quinta/quinta.component';
 import { SegundoComponent } from './pages/segundo/segundo.component';
 import { SeptimaComponent } from './pages/septima/septima.component';
@@ -8,7 +9,11 @@ import { SextaComponent } from './pages/sexta/sexta.component';
 import { TerceroComponent } from './pages/tercero/tercero.component';
 
 const routes: Routes = [
-
+  {
+    path: 'primera-pagina',
+    component:AppComponent
+  },
+  
   {
     path:'segunda-pagina',
     component:SegundoComponent
